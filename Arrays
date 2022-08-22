@@ -1,0 +1,35 @@
+Algoritmo sin_titulo
+	
+	acum = 0
+	Dimension nums[5];
+	
+	Para i<-1 Hasta 5 Con Paso 1 Hacer
+		Imprimir "---------------------------------"
+		Escribir "ingrese nota ", i
+		Imprimir "---------------------------------"
+		Leer nums[i];
+		
+		si nums[i] >= 1 y nums[i] <= 7  Entonces
+			
+			acum = nums[i] + acum
+			div = div + 1
+			
+		SiNo
+			i = i - 1
+			Imprimir "---------------------------------"
+			imprimir "nota invalida"
+		FinSi
+		
+	Fin para
+
+	prom = acum / div 
+	
+	Imprimir "su promedio es: ",prom
+	si prom >= 4 Entonces
+		
+		Imprimir "aprobado"
+	SiNo
+		Imprimir "reprobado"
+	FinSi
+	
+FinAlgoritmo
