@@ -1,51 +1,53 @@
 Algoritmo sin_titulo
+
+Dimension ent[6];
+a = 1
+
+Para i=1 Hasta 5 Con Paso 1 Hacer
 	
-	Dimension ent[6];
-	a = 1
-	
-	Para i=1 Hasta 5 Con Paso 1 Hacer
+	Repetir
 		
-		Repetir
+		
+		Imprimir "Ingresar numero entero"
+		leer ent[i]
+		
+		si ent[i] - trunc(ent[i] ) <> 0 o  ent[i] > 10 o ent[i] < 1
+			Imprimir "Nota invalida"
 			
+		FinSi
+		
+		
+		
+	Hasta Que ent[i] - trunc(ent[i] ) = 0 y ent[i] <= 10 y ent[i] >= 1
+	
+	si a = 1 Entonces
+		
+		AL = ent[i]
+		BJ = ent[i]
+		a = 0
+		
+	FinSi
+	
+	si ent[i] > AL Entonces
+		
+		AL = ent[i]
+		
+	SiNo
+		
+		si ent[i] < BJ Entonces
 			
-		  Imprimir "Ingresar numero entero"
-		  leer ent[i]
-		  
-		  si ent[i] - trunc(ent[i] ) <> 0 o  ent[i] <= 10 o ent[i] >= 1
-			  Imprimir "Nota invalida"
-			  
-		  FinSi
-		  
-		 
-		  
-	  Hasta Que ent[i] - trunc(ent[i] ) = 0 y ent[i] <= 10 y ent[i] >= 1
-	  
-		si a = 1 Entonces
-			
-			AL = ent[i]
 			BJ = ent[i]
-			a = 0
 			
 		FinSi
 		
-		si ent[i] > AL Entonces
-			
-			AL = ent[i]
-			
-		SiNo
-			
-			si ent[i] < BJ Entonces
-				
-				BJ = ent[i]
-				
-			FinSi
-			
-		FinSi
-		
-	FinPara
+	FinSi
 	
-	Imprimir AL
-	Imprimir BJ
-	
-	
+FinPara
+
+Imprimir AL
+Imprimir BJ
+
 FinAlgoritmo
+
+
+
